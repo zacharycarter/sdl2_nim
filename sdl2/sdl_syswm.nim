@@ -45,19 +45,19 @@ else:
   elif defined(SDL_VIDEO_DRIVER_X11):
     import x, xlib  ## x11 lib
   elif defined(SDL_VIDEO_DRIVER_DIRECTFB):
-    nil
+    discard
   elif defined(SDL_VIDEO_DRIVER_COCOA):
     discard
   elif defined(SDL_VIDEO_DRIVER_UIKIT):
-    nil
+    discard
   elif defined(SDL_VIDEO_DRIVER_WAYLAND):
-    nil
+    discard
   elif defined(SDL_VIDEO_DRIVER_MIR):
-    nil
+    discard
   elif defined(SDL_VIDEO_DRIVER_WINRT):
-    nil
+    discard
   elif defined(SDL_VIDEO_DRIVER_ANDROID):
-    nil
+    discard
 
   type
     SysWMKind* {.size: sizeof(cint).} = enum  ##  \
