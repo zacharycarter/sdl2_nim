@@ -44,20 +44,6 @@ else:
     import windows  ## oldwinapi lib
   elif defined(SDL_VIDEO_DRIVER_X11):
     import x, xlib  ## x11 lib
-  elif defined(SDL_VIDEO_DRIVER_DIRECTFB):
-    discard
-  elif defined(SDL_VIDEO_DRIVER_COCOA):
-    discard
-  elif defined(SDL_VIDEO_DRIVER_UIKIT):
-    discard
-  elif defined(SDL_VIDEO_DRIVER_WAYLAND):
-    discard
-  elif defined(SDL_VIDEO_DRIVER_MIR):
-    discard
-  elif defined(SDL_VIDEO_DRIVER_WINRT):
-    discard
-  elif defined(SDL_VIDEO_DRIVER_ANDROID):
-    discard
 
   type
     SysWMKind* {.size: sizeof(cint).} = enum  ##  \
