@@ -47,7 +47,7 @@ else:
   elif defined(SDL_VIDEO_DRIVER_DIRECTFB):
     nil
   elif defined(SDL_VIDEO_DRIVER_COCOA):
-    nil
+    discard
   elif defined(SDL_VIDEO_DRIVER_UIKIT):
     nil
   elif defined(SDL_VIDEO_DRIVER_WAYLAND):
